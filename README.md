@@ -1,7 +1,7 @@
-Completed:
+Completed
 -----------------------------------------
-Lists, Stack & Queues
--
+Lists, Stack & Queues:
+
 Singly Linked List
 
 Doubly Linked Link
@@ -14,6 +14,6 @@ Double-Ended Queue
 
 Array List
 
-To Do:
+To Do
 -----------------------------------------
 Trees
