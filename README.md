@@ -17,5 +17,7 @@ Array List
 To Do
 ======================
 Trees
+
 Priority Queues
+
 Maps, Dictionaries
