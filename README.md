@@ -21,3 +21,13 @@ Trees
 Priority Queues
 
 Maps, Dictionaries
+
+Heap
+
+Bubble Sort
+
+Merge Sort
+
+Quick Sort
+
+Insertion Sort
