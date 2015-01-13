@@ -1,9 +1,0 @@
-def mergesort(L, p):
-	if 
-
-if __name__ == "__main__":
-	dequeue = Dequeue()
-	dequeue.addHead("Hello")
-	dequeue.addTail("World")
-	print dequeue.removeHead()
-	print dequeue.removeHead()
