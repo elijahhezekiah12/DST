@@ -1,7 +1,7 @@
 Completed:
 -----------------------------------------
 Lists, Stack & Queues
------------------------------
+-
 Singly Linked List
 
 Doubly Linked Link
