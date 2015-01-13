@@ -1,5 +1,5 @@
 Completed:
-
+-----------------------------------------
 Lists, Stack & Queues
 -----------------------------
 Singly Linked List
@@ -15,4 +15,5 @@ Double-Ended Queue
 Array List
 
 To Do:
-..
+-----------------------------------------
+Trees
