@@ -1,5 +1,3 @@
-import math
-
 def selectionsort(list):
 	for x in range(0, len(list)):	
 		index = x
@@ -14,8 +12,7 @@ def selectionsort(list):
 		list[index] = temp
 	
 	return list
-		
-	return "hi"
+	
 if __name__ == "__main__":
 	list = [55,51,74,86,36,67,88,0,49]
 	print selectionsort(list)

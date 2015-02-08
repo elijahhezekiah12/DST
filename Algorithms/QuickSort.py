@@ -1,5 +1,3 @@
-import math
-
 def quicksort(list):
 	if len(list) > 1:
 		l, e, g = partition(list)	
@@ -23,9 +21,6 @@ def partition(list):
 				
 		return l, e, g
 		
-
-
-
 if __name__ == "__main__":
 	list = [1,5,7,8,3,6,8,0,9]
 	print quicksort(list)
