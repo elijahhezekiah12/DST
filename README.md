@@ -14,6 +14,18 @@ Double-Ended Queue
 
 Array List
 
+Algorithms
+----
+Merge Sort
+
+Quick Sort
+
+Selection Sort
+
+Insertion Sort
+
+Binary Search
+
 To Do
 ======================
 Trees
