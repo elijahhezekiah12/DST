@@ -1,44 +1,44 @@
 class Node():
 
-	def __init__(self, e, n):
-		self.element = e
-		self.next = n
+    def __init__(self, e, n):
+	    self.element = e
+	    self.next = n
 		
-	def getElement(self):
-		return self.element
+    def getElement(self):
+	    return self.element
 		
-	def getNext(self):
-		return self.next
+    def getNext(self):
+        return self.next
 		
-	def setElement(self, e):
-		self.element = e
+    def setElement(self, e):
+	    self.element = e
 		
-	def setNext(self, n):
-		self.next = n
+    def setNext(self, n):
+	    self.next = n
 		
 		
 class SLinkedList():
 	
-	def __init__(self):
-		self.head = None
-		self.tail = None
-		self.size = 0
+    def __init__(self):
+        self.head = None
+        self.tail = None
+        self.size = 0
 		
-	def addFirst(self, n):
-		n.setNext(self.head)
-		self.head = n
-		self.size += 1
+    def addFirst(self, n):
+    	n.setNext(self.head)
+    	self.head = n
+    	self.size += 1
+	
+    	if self.tail == None:
+    		self.tail = self.head
 		
-		if self.tail == None:
-			self.tail = self.head
-		
-	def addLast(self, n):
+    def addLast(self, n):
 		n.setNext(None)
 		self.tail.setNext(n)
 		self.tail  = n
 		self.size += 1
 		
-	def removeFirst(self):
+    def removeFirst(self):
 		if self.head == None:
 			print "list is empty"
 		else:
@@ -47,29 +47,40 @@ class SLinkedList():
 			temp.setNext(None)
 			self.size -= 1
 		
-	def getHead(self):
+    def getHead(self):
 		return self.head
 		
-	def getTail(self):
-		return self.tail
-		
+    def getTail(self):
+        return self.tail
+
+    def print_list(self):
+        s = "["
+        n = self.head
+        while n is not self.tail:
+            s +=  n.getElement()
+            n = n.getNext()
+            if n is not self.tail:
+                s += ","
+        s += "]"
+        return s
+    
 if __name__ == "__main__":
-	slist = SLinkedList()
+    slist = SLinkedList()
 	
-	n1 = Node("Hello", None)
-	slist.addFirst(n1)
-	print slist.getHead().getElement() + " - " +  slist.getTail().getElement()
+    n1 = Node("Hello", None)
+    slist.addFirst(n1)
+   # print slist.getHead().getElement() + " - " +  slist.getTail().getElement()
 	
-	n1 = Node("World", None)
-	slist.addFirst(n1)
-	print slist.getHead().getElement() + " - " +  slist.getTail().getElement()
+    n1 = Node("World", None)
+    slist.addFirst(n1)
+    #print slist.getHead().getElement() + " - " +  slist.getTail().getElement()
 	
-	n1 = Node("Singly", None)
-	slist.addFirst(n1)
-	print slist.getHead().getElement() + " - " +  slist.getTail().getElement()
+    n1 = Node("Singly", None)
+    slist.addFirst(n1)
+    #print slist.getHead().getElement() + " - " +  slist.getTail().getElement()
 	
-	n1 = Node("LinkedList", None)
-	slist.addLast(n1)
-	print slist.getHead().getElement() + " - " +  slist.getTail().getElement()
-	
+    n1 = Node("LinkedList", None)
+    slist.addLast(n1)
+    #print slist.getHead().getElement() + " - " +  slist.getTail().getElement()
+    print slist.print_list()
 
